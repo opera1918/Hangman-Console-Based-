@@ -1,4 +1,4 @@
-# **Console-based Hangman Game**
+# **Console-based Hangman Game (Python)**
 This is a console-based implementation of the classic hangman game using Python. Players can guess letters to uncover a hidden word within a limited number of attempts.
 
 
