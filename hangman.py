@@ -60,18 +60,19 @@ class Hangman:
             self.game_progress[index] = letter.upper()
 
     def print_game_status(self):
+        error_info = lambda msg: print(move("W", 2) + "\033[K" + "🔹 "+' '.join(self.game_progress) + f'\t\t \u001b[1;31m({msg})\u001b[1;33m')
         if Hangman.incorrect_input == True:
-            print(move("W", 2) + "\033[K" + "🔹 "+' '.join(self.game_progress) + '\t\t \u001b[1;31m(Incorrect input)\u001b[1;33m')
+            error_info('Incorrect input')
             Hangman.incorrect_input = False
             return
                    
         if Hangman.invalid_input == True:
-            print(move("W", 2) + "\033[K" + "🔹 "+' '.join(self.game_progress) + '\t\t \u001b[1;31m(Invalid input)\u001b[1;33m')
+            error_info('Invalid input')
             Hangman.invalid_input = False
             return
                   
         if Hangman.already_used == True:
-            print(move("W", 2) + "\033[K" + "🔹 "+' '.join(self.game_progress) + '\t\t \u001b[1;31m(You already guessed it)\u001b[1;33m')
+            error_info('You already guessed it')
             Hangman.already_used = False
             return
 
@@ -119,7 +120,6 @@ class Hangman:
                     return
 
 if __name__ == '__main__':
-
     os.system('cls')
     with open('data.json', 'r') as file:
         quests = json.load(file)
