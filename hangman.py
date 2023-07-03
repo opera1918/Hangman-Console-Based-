@@ -39,7 +39,8 @@ class Hangman:
     
     def game_title(self) ->  None:
         cwidth = os.get_terminal_size().columns
-        print(u'\u001b[1;36m-+-+-+- CONSOLE BASED HANGMAN GAME USING PYTHON -+-+-+-'.center(cwidth))
+        print('\u001b[1;36m')
+        print(u'-+-+-+- CONSOLE BASED HANGMAN GAME USING PYTHON -+-+-+-'.center(cwidth))
         print(''.center(cwidth,'_'), end="\n\n")
 
     def display_question(self) -> None:
