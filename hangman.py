@@ -44,7 +44,7 @@ class Hangman:
         print(''.center(cwidth,'_'), end="\n\n")
 
     def display_question(self) -> None:
-        print(u"\u001b[1;35m"+f"🔸 {self.word_guess_query}")
+        print(u"\n\u001b[1;35m"+f"🔸 {self.word_guess_query}\n")
 
     def get_user_input(self):
         return input(" » ").upper()
