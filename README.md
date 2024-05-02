@@ -1,7 +1,7 @@
 # **Console-based Hangman Game (Python)**
 This is a console-based implementation of the classic hangman game using Python. Players can guess letters to uncover a hidden word within a limited number of attempts.
 
-[![Video Demo](https://img.youtube.com/vi/6-6Pttve7vM/0.jpg)](https://www.youtube.com/watch?v=6-6Pttve7vM)
+[![Video Demo](https://i3.ytimg.com/vi/6-6Pttve7vM/maxresdefault.jpg)](https://www.youtube.com/watch?v=6-6Pttve7vM)
 
 ### How to Play 🎮
 1. Run the Python script hangman.py.
